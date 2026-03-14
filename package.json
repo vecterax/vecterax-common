@@ -7,12 +7,23 @@
   "files": [
     "dist"
   ],
-   "exports": {
-   
-    "./ui": "./dist/components/index.js",
-    "./hooks": "./dist/hooks/index.js",
-    "./utils": "./dist/utils/index.js",
-    "./api": "./dist/api/index.js"
+    "exports": {
+    "./ui": {
+      "types": "./dist/components/index.d.ts",
+      "default": "./dist/components/index.js"
+    },
+    "./hooks": {
+      "types": "./dist/hooks/index.d.ts",
+      "default": "./dist/hooks/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
+    },
+    "./api": {
+      "types": "./dist/api/index.d.ts",
+      "default": "./dist/api/index.js"
+    }
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

@@ -1,0 +1,96 @@
+name: Feature
+description: Request or implement a VecteraX product feature
+title: "[FEATURE] "
+labels:
+  - "type:feature"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Complete every required section before moving this issue to Ready.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What user or business problem are we solving?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Authentication
+        - Accounts
+        - Dashboard
+        - Projects
+        - Viewer
+        - Digitization
+        - Search
+        - Publications
+        - Institution
+        - Platform
+    validations:
+      required: true
+
+  - type: textarea
+    id: user_story
+    attributes:
+      label: User story
+      placeholder: As a..., I want..., so that...
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What must be implemented?
+    validations:
+      required: true
+
+  - type: textarea
+    id: out_of_scope
+    attributes:
+      label: Out of scope
+      description: What is explicitly excluded?
+
+  - type: textarea
+    id: flow
+    attributes:
+      label: Workflow or wireframe
+      description: Link or paste the approved flow/wireframe.
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      placeholder: |
+        - [ ] Criterion one
+        - [ ] Criterion two
+    validations:
+      required: true
+
+  - type: textarea
+    id: api
+    attributes:
+      label: API and data impact
+      description: Describe APIs, contracts, migrations or state changes.
+
+  - type: textarea
+    id: security
+    attributes:
+      label: Authentication, authorization and security
+      description: Describe account, role, permission and security requirements.
+
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing requirements
+      description: Unit, integration, E2E, RTL, accessibility and manual QA.
+    validations:
+      required: true

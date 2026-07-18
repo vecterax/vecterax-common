@@ -1,0 +1,66 @@
+name: Bug report
+description: Report incorrect VecteraX behavior
+title: "[BUG] "
+labels:
+  - "type:bug"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What is going wrong?
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Local development
+        - Preview
+        - Staging
+        - Production
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser or runtime
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots, logs or video
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: Who is affected and how severe is it?
